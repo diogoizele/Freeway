@@ -5,6 +5,7 @@ function setup() {
 function draw() {
   background(highWayImg);
   drawCow();
-  drawAndMovementCars();
   movementCow();
+  drawAndMovementCars();
+  scorePoint();
 }

@@ -13,5 +13,6 @@ function drawAndMovementCars() {
   cars.forEach((car, index) => {
     image(carsImg[index], car.x, car.y, car.width, car.height);
     car.movement();
+    verifyCollision(car);
   });
 }
