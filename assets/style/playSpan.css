@@ -7,7 +7,6 @@ body {
   position: absolute;
   height: 400px;
   width: 500px;
-  top: 178px;
   z-index: 1;
   background-color: #000000;
   display: flex;
