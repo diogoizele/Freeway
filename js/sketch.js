@@ -1,6 +1,8 @@
 function setup() {
   createCanvas(500, 400);
-  soundtrackSound.loop();
+  setTimeout(() => {
+    soundtrackSound.loop();
+  }, 3000);
 }
 
 function draw() {
