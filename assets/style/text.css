@@ -30,7 +30,7 @@ body:before {
 
 h1 {
   display: inline-block;
-  color: white;
+  color: #fbc740;
   font-family: "Righteous", serif;
   font-size: 5em;
   text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
@@ -67,7 +67,7 @@ h1:after {
 
 .footer-reference {
   display: inline-block;
-  color: #788adb;
+  color: #bd97cb;
   font-weight: 200;
   font-family: "Righteous", serif;
 }
@@ -80,4 +80,22 @@ h1:after {
 
 .footer-reference-link:hover {
   text-shadow: 0 0 0.2rem black;
+}
+
+.points-text {
+  display: inline-block;
+  color: #bd97cb;
+  font-weight: 200;
+  font-family: "Righteous", serif;
+  font-size: 2rem;
+  text-shadow: 0.05rem 0.05rem 0.2rem black;
+}
+
+.points-text-value {
+  background-color: #fbc740;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+
+  color: white;
+  text-shadow: 0.05rem 0.05rem 0.2rem black;
 }
