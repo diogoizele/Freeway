@@ -5,5 +5,6 @@ function setup() {
 function draw() {
   background(highWayImg);
   drawCow();
-  drawCars();
+  drawAndMovementCars();
+  movementCow();
 }
