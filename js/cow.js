@@ -41,17 +41,27 @@ function verifyCollision(car) {
     if (cow.points > 0) {
       const pointSpan = document.querySelector(".points-text-value");
       cow.points--;
-      pointSpan.textContent = cow.points;
+      renderPoints(pointSpan);
     }
-    cow.y = 372;
+    backTheInitialPosition();
+    collisionSound.play();
   }
+}
+
+function backTheInitialPosition() {
+  cow.y = 395;
+}
+
+function renderPoints(element) {
+  element.textContent = cow.points;
 }
 
 function scorePoint() {
   const pointSpan = document.querySelector(".points-text-value");
   if (cow.y < 18) {
-    cow.y = 372;
+    backTheInitialPosition();
     cow.points++;
-    pointSpan.textContent = cow.points;
+    renderPoints(pointSpan);
+    pointSound.play();
   }
 }

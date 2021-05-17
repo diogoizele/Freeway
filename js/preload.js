@@ -7,7 +7,10 @@ let car1Img,
   car7Img,
   car8Img,
   cowImg,
-  highWayImg;
+  highWayImg,
+  soundtrackSound,
+  pointSound,
+  collisionSound;
 
 function preload() {
   car1Img = loadImage("./assets/img/car-01.png");
@@ -32,4 +35,8 @@ function preload() {
     car7Img,
     car8Img,
   ];
+
+  soundtrackSound = loadSound("./assets/sounds/soundtrack.mp3");
+  collisionSound = loadSound("./assets/sounds/collision.mp3");
+  pointSound = loadSound("./assets/sounds/points.wav");
 }
